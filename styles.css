@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+}
+.header{
+    font-family: Arial;
+    
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    width: 500px;
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+}
+.middle{
+    width: 200px;
+}
+.middle img{
+    height: 70px;
+    
+}
+.right{
+    display: flex;
+}
+.search-bar{
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    border-radius: 50px;
+    height: 50px;
+    width: 200px;
+    padding: 15px;
+    
+}
+.right i{
+    font-size: 20px;
+    color: gray;
+    
+    
+    
+}
+.search{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background-color: white;
+    width: 80px;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: -41px;
+    border: none;
+}
+.login-button{
+    background-color: transparent;
+    border: none;
+    margin: 20px;
+    font-weight: 600;
+}
+.signup-button{
+    font-size: 14px;
+    height: 50px;
+    width: 110px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border-radius: 50px;
+}
+.nav{
+    margin-top: 70px;
+    text-align: center;
+}
+.over-button{
+    height: 35px;
+    background-color: rgb(97, 55, 232);
+    color: white;
+    border-radius: 50px;
+    width: 290px;
+    height: 40px;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 50px;
+    
+}
+.nav h1{
+    font-weight: 200;
+    font-size: 80px;
+    margin-bottom: 20px;
+    line-height: 80px;
+    
+}
+.nav h3{
+    font-family: Arial;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.getstarted-button{
+    height: 60px;
+    width: 120px;
+    background-color: black;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.slider{
+    overflow: hidden;
+    white-space: nowrap;
+    
+    
+}
+.images{
+    
+   display: inline-block;
+    padding: 40px;
+    animation:25s slide infinite linear;
+    
+}
+
+.images img{
+    margin-left: 40px;
+    height: 340px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.explore{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 50px;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 40px;
+    gap: 30px;
+}
+.thumbnail-image{
+    width: 100%;
+    border-radius: 10px;
+    
+   
+}
+.down-info{
+    display:flex;
+    justify-content: space-between;
+    width: 315px;
+    margin-top: 5px;
+    font-family: Arial;
+    
+}
+.profile-picture{
+    height: 25px;
+    border-radius: 50%;
+}
+.left-info{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+.pro-button{
+    background-color: gray;
+    border: none;
+    color: white;
+    font-size: 12px;
+    padding: 2px;
+    border-radius: 2px;
+}
+.right-info{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+.thumbnail{
+    width: 100%;
+    position: relative;
+}
+.tooltip{
+    position: absolute;
+    opacity: 0;
+    transition: all ease 0.5s;
+    display: flex;
+    pointer-events: none;
+    bottom: 4px;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    border-radius: 10px;
+    background:linear-gradient(to bottom,rgba(255, 255, 255 ,0), rgb(0, 0, 0));
+    color: white;
+
+}
+.tooltip h1{
+    border-radius: 10px;
+    
+    color: white;
+    bottom: 4px;
+    
+}
+.thumbnail:hover .tooltip{
+    opacity: 1;
+    transition: all ease 0.s;
+}
+.tooltip i{
+    font-size: 30px;
+}
+.browse-div{
+    text-align: center;
+    margin-bottom: 150px;
+}
+.browse-button{
+    width: 250px;
+    height: 60px;
+    font-size: 15px;
+    border-radius: 50px;
+    background-color: white;
+    text-align: center;
+}
+.yellow-div{
+    height: 100vh;
+    background-color: #FFDA79;
+    text-align: center;
+    
+}
+
+.heading h1{
+    font-weight: 100;
+    font-size: 70px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.heading h2{
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 40px;
+    font-family: Arial;
+    padding-bottom: 50px;
+}
+.downside button{
+    height: 60px;
+    width: 180px;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    
+}
+.get-button{
+    background-color: black;
+    color: white;
+    border: none;
+    margin-right: 10px;
+}
+.learn-button{
+    background-color: white;
+    border: none;
+    margin-left: 10px;
+}
+.yellow-div h2{
+    font-weight: 100;
+    
+}
+.join{
+    text-decoration: underline;
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.slider1{
+    overflow: hidden;
+    white-space: nowrap;
+    height: 250px;
+    width: 100%;
+    
+    
+}
+.images1{
+    
+   display: inline-block;
+    padding: 40px;
+    animation: 25s slide infinite linear;
+    
+}
+.slider1:hover .images1{
+    animation-play-state:paused;
+}
+.images1 img{
+    margin-left: 40px;
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.low-bar{
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 30px 100px;
+}
+.low-bar img{
+    width: 120px;
+    height: 50;
+}
+.all{
+    display: flex;
+    gap: 50px;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: 100;
+}
